@@ -1,0 +1,9 @@
+<div ng-controller="HomeController as vm">
+	<div class="well container" ng-repeat="p in vm.actors">
+				<h2 style="text-align:center;">{{p.name}}</h2>
+				<img src="{{p.img}}" alt="{{p.name}}"  title="{{p.name}}" class="img-responsive"/>
+				<i><h4>Highest Grossing Movie: {{p.movie}}</h4></i>
+				<button class="btn btn-primary" ng-click>Edit</button>
+				<button class="btn btn-danger" ng-click="vm.deletePen(p)">Delete</button>
+	</div>
+</div>
